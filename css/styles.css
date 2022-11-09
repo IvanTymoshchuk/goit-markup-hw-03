@@ -16,12 +16,10 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6,p {
-    margin-top: 0px;
-}
- 
-p{
     margin: 0px;
 }
+ 
+
 
 ul {
     list-style: none;
@@ -49,6 +47,18 @@ ul {
     border-bottom: 1px solid #ececec;
     padding: 24px 0;
 }
+
+.header-icon{
+    margin-right: 10px;
+    fill: #757575;
+}
+
+.header-icon:hover,
+.header-icon:focus{
+    fill: var(--actent-color);
+}
+
+
 
 /* contaire */
 
@@ -89,7 +99,7 @@ border: 1px solid #EEEEEE;
     }
 
  .box-title{
-    margin: 20px 24px;
+    pading: 20px 24px;
  }
 
 
@@ -116,6 +126,23 @@ border: 1px solid #EEEEEE;
 }
 
 
+.contact-link {
+    margin-right: 50px;
+    color: #757575;
+    align-items: center;
+    display: flex;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--actent-color);
+}
+
+.nav-contact {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
 
  .nav-link:hover,
  .nav-link:focus{
@@ -124,11 +151,6 @@ color: var(--actent-color);
 
 .nav-link.current{
     color: var(--actent-color);
-}
-
-.contact-link:hover,
-.contact-link:focus{
-color: var(--actent-color);
 }
 
 .nav-list{
@@ -140,17 +162,6 @@ color: var(--actent-color);
     margin-right: 50px;
 }
 
-.nav-contact{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    
-}
-
-.contact-link{
-    margin-right: 50px;
-    color: #757575;
-}
 
 /* Section */
 
@@ -159,48 +170,44 @@ color: var(--actent-color);
     padding-top: 94px;
      
 }
+
+
+
 .list-title{
     margin-right: 30px;
     width: 270px;
 }
 
-.list-title::before{
-    display:block;
-    content: "";
-    height:120px;
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-}
-
-.icon-antena{
-
-background-image: url(../img/antenna.svg);
-}
-
-.icon-vector{
-
-background-image: url(../img/Vector.svg);
-}
-
-.icon-diagrama{
-
-background-image: url(../img/diagram.svg);
-}
-
-.icon-astronaut{
-
-background-image: url(../img/astronaut.svg);
-}
-
-.list-title:last-child{
+.list-title:last-child {
     margin-right: 0;
 }
-
-.title{
-list-style: none;
-display: flex;
+    
+.title {
+    list-style: none;
+    display: flex;
 }
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+    .bg-icon-title{
+    margin-bottom: 30px;  
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+
+    }
+
+    .icon-hero{
+        margin-left: 100px;
+        margin-top: 25px;
+    }
 
 .about{
     padding-bottom: 0;
@@ -218,23 +225,15 @@ line-height: 1.14;
 text-transform: uppercase;
 }
 
-.section-title {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 0;
-}
-
-.works-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.work-list{
+.work-list {
     color: #212121;
     list-style: none;
     display: flex;
     align-items: center;
+}
+
+.works-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .team{
@@ -248,6 +247,15 @@ text-transform: uppercase;
     display: flex;
     align-items: center;
 }
+
+.box-icon-iteam {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 32px;
+    margin-bottom: 30px;
+}
+
+
 
 .team:not(:last-child) {
     margin-right: 30px;
@@ -284,6 +292,7 @@ text-align: center;
 img{
     display: block;
 }
+
 
 /* Hero */
 .hero-title {
@@ -360,6 +369,8 @@ padding: 10px 32px;
     gap:8px;
 }
 
+/* Logo */
+
 .logo , 
 .logo-pr {
 font-family: 'Raleway';
@@ -425,4 +436,38 @@ color: rgba(255, 255, 255, 0.6);
     color: var(--actent-color);
 }
 
+/* Постійні клієнти */
+
+.reg-custom {
+    display: flex;
+    justify-content: center;
+}
+
+.compagny{
+    align-items: center;
+    display: inline-flex;
+    margin-bottom: 30px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.compagny:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icon-compagny{
+    margin-left: 32px;
+}
+
+.icon-team{
+fill: #ffffff;
+}
+
+.icon-team:hover,
+.icon-team:focus {
+    fill: var(--actent-color);
+    
+}
 
