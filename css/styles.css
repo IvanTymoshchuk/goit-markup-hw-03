@@ -196,6 +196,9 @@ color: var(--actent-color);
 }
 
     .bg-icon-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;  
     width: 270px;
     height: 120px;
@@ -204,10 +207,6 @@ color: var(--actent-color);
 
     }
 
-    .icon-hero{
-        margin-left: 100px;
-        margin-top: 25px;
-    }
 
 .about{
     padding-bottom: 0;
@@ -449,25 +448,46 @@ color: rgba(255, 255, 255, 0.6);
     margin-bottom: 30px;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border:1px solid #AFB1B8;
     border-radius: 4px;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .compagny:not(:last-child) {
     margin-right: 30px;
 }
 
+
+
+
 .icon-compagny{
     margin-left: 32px;
 }
 
 .icon-team{
-fill: #ffffff;
+    fill: currentColor;
 }
 
-.icon-team:hover,
-.icon-team:focus {
-    fill: var(--actent-color);
+.link-icon{
+    border-radius: 50%;
+    color:#ffffff;
+}
+
+.link-icon:hover{
+color: var(--actent-color);
+}
+
+.link-compagny:hover,
+.link-compagny:focus {
+color:var(--actent-color);
     
 }
 
+.box-icon-foot{
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+color: #ffffff;
+}
